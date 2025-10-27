@@ -9,6 +9,7 @@ class Post(models.Model):
 class Photo(models.Model):
     caption = models.CharField(max_length=100)
 
+
 class Comment(models.Model):
     text = models.TextField()
 
@@ -20,3 +21,4 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment on {self.content_object}: {self.text[:20]}"
+
