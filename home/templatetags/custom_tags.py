@@ -13,5 +13,5 @@ def current_time():
 
 @register.simple_tag
 def discounted_price(price, discount):
-    """Returns price after discount"""
+    
     return price - (price * discount / 100)
