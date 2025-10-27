@@ -1,0 +1,5 @@
+{% load custom_tags %}   
+<h2>Current Time: {% current_time %}</h2>
+<h2>Discounted Price:</h2>
+<p>Original: $1000</p>
+<p>After 20% Discount: {% discounted_price 200 2 %}</p>
